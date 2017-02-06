@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MainActivityButtonStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#ff00</item>
+    </style>
 </resources>

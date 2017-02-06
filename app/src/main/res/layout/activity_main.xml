@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="tinker.cn.rongdemo.MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/ac_bt_start_private_chat_one"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        style="@style/MainActivityButtonStyle"
+        android:text="对2开启私聊"
+        />
+    <Button
+        android:id="@+id/ac_bt_start_private_chat_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MainActivityButtonStyle"
+        android:text="对1开启私聊"
+        />
+    <Button
+        android:id="@+id/ac_bt_start_conversation_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MainActivityButtonStyle"
+        android:text="会话列表"/>
+
+    <Button
+        android:id="@+id/ac_bt_audio_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MainActivityButtonStyle"
+        android:text="录音"/>
+</LinearLayout>
